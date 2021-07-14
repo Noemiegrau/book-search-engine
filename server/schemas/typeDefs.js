@@ -9,13 +9,22 @@ type Auth {
   }
   
 type Book {
-    bookId: ID
-    authors: []
+    bookId: String
+    authors: [String]
     description: String
     title: String
-    image: ??????????????
-    link: [Reaction]
+    image: String
+    link: String
   }
+
+input inputBook {
+    bookId: String
+    authors: [String]
+    description: String
+    title: String
+    image: String
+    link: String
+}
 
 type User {
     _id: ID
@@ -27,15 +36,13 @@ type User {
 
 type Query {
     me: User
-    users: [User]
-    user(username: String!): User
   }
 
   type Mutation {
     login(email: String!, password: String!): Auth
     addUser(username: String!, email: String!, password: String!): Auth
-    saveBook(book: [Author]!, description: String!, title: String!, bookId: ID!, image: img!, ): User
-    removeBook(bookId: ID!): User
+    saveBook(input: [Author]!): User
+    removeBook(bookId: String!): User
   }
 
 `;
