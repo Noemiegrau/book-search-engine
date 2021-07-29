@@ -22,6 +22,7 @@ Project is created using:
 * Heroku
 
 ## **_Usage_**
+![Screen Shot 2021-07-14 at 3 48 06 PM](https://user-images.githubusercontent.com/78329298/125702622-76f76bab-e6cc-4bb0-851d-a69642395933.png)
 
 
 ## **_Installation_**
@@ -31,7 +32,7 @@ Here are some guidelines for installing the project on your local machine in ord
 
 2. Then, make sure that your repo includes a package.json with the required dependencies. You can create one by running ```npm init``` in your command line, and ```npm install``` to install the dependencies.
 
-3. Run ```node server.js```, ```node server``` or npm start in your terminal to launch the application. Or check the deployed app directly on our heroku link (???????????????).
+3. Run ```npm run develop``` in your terminal from the root directory to launch the application. Or check the deployed app directly on the app's heroku link (???????????????).
 
 4. Enjoy and don't hesitate to contribute!
 
